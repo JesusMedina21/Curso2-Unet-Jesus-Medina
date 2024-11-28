@@ -79,7 +79,6 @@
 </div>
 <div *ngIf="data && data.length > 0">
   <h2 style="text-align: center; margin-bottom: 20px;">Lista de Instrumentos</h2>
-
   <div class="container">
     <div class="row">
       <ion-grid>
@@ -89,14 +88,13 @@
             <br>
             <strong>Familia:</strong> {{ instrumento.Familia_Del_Instrumento }}
             <br>
-            <img [src]="instrumento.foto" alt="{{ instrumento.Nombre_Del_Instrumento }}" style="max-width: 100%;" class="img-thumbnail">
+            <img [src]="instrumento.Foto" alt="{{ instrumento.Nombre_Del_Instrumento }}" style="max-width: 100%;" class="img-thumbnail">
             <br><br>
           </ion-col>
         </ion-row>
       </ion-grid>
     </div>
   </div>
-
 </div>
 <div *ngIf="!data || data.length === 0">
   <p>No se encontraron instrumentos.</p>
