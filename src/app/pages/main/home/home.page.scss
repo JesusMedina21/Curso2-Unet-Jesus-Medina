@@ -64,8 +64,11 @@ ion-footer {
   color: white; /* Cambia el color del texto al pasar el mouse */
 }
 img {
-  max-width: 100%; /* Ensure images scale with their container */
-  height: 400px; /* Maintain aspect ratio */
+  max-width: 100%; /* Asegura que las imágenes escalen con su contenedor */
+  height: auto; /* Mantiene la relación de aspecto */
+  display: block; /* Hace que la imagen sea un bloque */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  width: 100%; /* Las imágenes ocuparán todo el ancho del contenedor */
 }
 @media (max-width: 768px) {
   .custom-header {
